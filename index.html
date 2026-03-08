@@ -5,9 +5,17 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Phone</title>
+  <script>
+    const theme = localStorage.getItem('theme');
+    if (theme === 'dark') {
+      document.documentElement.classList.add('dark');
+    } else {
+      document.documentElement.classList.remove('dark');
+    }
+  </script>
   <link rel="stylesheet" href="./src/output.css" />
   <link rel="stylesheet" href="font awesome/fontawesome-free-7.1.0-web/css/all.min.css">
-  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
 
 </head>
 
@@ -364,7 +372,7 @@ py-12">
     </div>
   </footer>
 
-<script>
+  <!-- <script>
   tailwind.config = {
     theme: {
       extend: {
@@ -374,7 +382,7 @@ py-12">
       }
     }
   }
-</script>
+</script> -->
   <script src="script.js"></script>
 </body>
 
